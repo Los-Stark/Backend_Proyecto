@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/products")
 public class ProductsController {
-	
+	//prueba de commit
 	@Autowired
 	IProductsService productsService;
 	
