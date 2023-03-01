@@ -8,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 public interface IProductsRepository extends CrudRepository<Products, Long> {
 	
 	Products findById(long idProduct);
-	List<Products> findAllByName(String name);
+	//List<Products> findAllByName(String name);
 	
 
 }

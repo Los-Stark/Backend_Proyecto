@@ -17,10 +17,10 @@ public class Users {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idUsuario;
+	private long idUser;
 	@Column(name = "nombre_completo",nullable = false,length=FIELD_MAX_LENGTH)
 	private String name;
-	@Column(name = "nombres_de_usuarios",length=FIELD_MAX_LENGTH)
+	@Column(name = "nombres_de_usuarios",nullable = false,length=FIELD_MAX_LENGTH)
 	private String userName;
 	@Column(name = "telefono",length=FIELD_MAX_LENGTH)
 	private String phone;
@@ -31,10 +31,10 @@ public class Users {
 	
 	
 	public long getIdUsuario() {
-		return idUsuario;
+		return idUser;
 	}
 	public void setIdUsuario(long idUsuario) {
-		this.idUsuario = idUsuario;
+		this.idUser = idUsuario;
 	}
 	public String getName() {
 		return name;
