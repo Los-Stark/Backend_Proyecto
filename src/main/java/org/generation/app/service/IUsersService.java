@@ -10,13 +10,13 @@ public interface IUsersService {
 	public Users getUserById(long idUser);
 	public List<Users> getAllUsers();
 	
-	public boolean existUserByEmail(String email);
+	public boolean existsUserByEmail(String email);
 	
 	public Users setUser(Users user);
 	
 	public Users updateUser(Users user);
 	
-	public String deleteUserById(long idUser);
+	//public String deleteUserById(long idUser);
 
 	
 	
