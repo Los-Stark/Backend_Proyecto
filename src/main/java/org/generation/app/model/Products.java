@@ -10,11 +10,12 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "products")
 public class Products {
+	public static final int FIELD_MAX_LENGTH= 150;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idProducts;
-	@Column(name = "nombre")
+	@Column(name = "nombre", nullable = false,length=FIELD_MAX_LENGTH)
 	private String name;
 	@Column(name = "precio")
 	private int price;
