@@ -1,4 +1,4 @@
-INSERT INTO `usuarios` (`nombrecompleto`,`nombresdeusuarios`,`telefono`,`email`,`contrasenia`)VALUES ("Raygoza Zamudio Rafael","Rafa","3330349623", "raygoza.zamudio.rafael@gmail.com","Contraseña segura");
+INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contrasenia`)VALUES ("Raygoza Zamudio Rafael","Rafa","3330349623", "raygoza.zamudio.rafael@gmail.com","Contraseña segura");
 INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Juan Marcos Gonzalez Romo","JuanMGonRo","3316935436","gonzalezromojm@gmail.com","juanito1997");
 INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Karen Chavando Perez","KarenCP","3316935296","chavandokaren09@gmail.com","karen1234");
 INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("María Fernanda Rosales Ortega", "FerRos","5544517592","fernanda.rosales.ortega@gmail.com","F312066064");
