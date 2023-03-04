@@ -1,20 +1,18 @@
-INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES ("Raygoza Zamudio Rafael","Rafa","3330349623", "raygoza.zamudio.rafael@gmail.com","Contraseña segura");
-INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Juan Marcos Gonzalez Romo","JuanMGonRo","3316935436","gonzalezromojm@gmail.com","juanito1997");
-INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`) VALUES("Karen Chavando Perez","KarenCP","3316935296","chavandokaren09@gmail.com","karen1234");
-INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("María Fernanda Rosales Ortega", "FerRos","5544517592","fernanda.rosales.ortega@gmail.com","F312066064");
-INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Alejandro Morales","alex19","7295183114","moralesa043@gmail.com","1234");
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",150,1, "https://i.ibb.co/qpPQSvB/denji-pld-mar.png");
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",150,1, "https://i.ibb.co/CsCttwR/denji-pld-neg.png");
-
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",150,2, "https://i.ibb.co/Qp3fKRS/denji-pl-neg.png");
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",150,2, "https://i.ibb.co/Nx4SrXt/denji-pl-gris.png");
-
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",300,3, "https://i.ibb.co/VLkYhFp/denji-sud-neg.png");
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",300,3, "https://i.ibb.co/tJLkDX7/denji-sud-gris.png");
+INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES ("Raygoza Zamudio Rafael","Rafa","3330349623", "raygoza.zamudio.rafael@gmail.com","Contraseña segura");
+INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Juan Marcos Gonzalez Romo","JuanMGonRo","3316935436","gonzalezromojm@gmail.com","juanito1997");
+INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Karen Chavando Perez","KarenCP","3316935296","chavandokaren09@gmail.com","karen1234");
+INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("María Fernanda Rosales Ortega", "FerRos","5544517592","fernanda.rosales.ortega@gmail.com","F312066064");
+INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Alejandro Morales","alex19","7295183114","moralesa043@gmail.com","1234");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Denji",150,1, "https://i.ibb.co/qpPQSvB/denji-pld-mar.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Denji",150,1, "https://i.ibb.co/CsCttwR/denji-pld-neg.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Denji",150,2, "https://i.ibb.co/Qp3fKRS/denji-pl-neg.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Denji",150,2, "https://i.ibb.co/Nx4SrXt/denji-pl-gris.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Denji",300,3, "https://i.ibb.co/VLkYhFp/denji-sud-neg.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Denji",300,3, "https://i.ibb.co/tJLkDX7/denji-sud-gris.png");
 
 
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Izuku Midoriya",150,1, "https://i.ibb.co/XFDg6Zt/deku-pld-mar.png");
-INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Izuku Midoriya",150,1, "https://i.ibb.co/VVPwTjw/deku-pld-neg.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Izuku Midoriya",150,1, "https://i.ibb.co/XFDg6Zt/deku-pld-mar.png");
+INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`)VALUES ("Izuku Midoriya",150,1, "https://i.ibb.co/VVPwTjw/deku-pld-neg.png");
 
 INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Izuku Midoriya",150,2, "https://i.ibb.co/jJbpGS9/deku-pl-gris.png");
 INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Izuku Midoriya",150,2, "https://i.ibb.co/SvxjQ70/deku-pl-neg.png");
