@@ -3,7 +3,6 @@ INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`
 INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`) VALUES("Karen Chavando Perez","KarenCP","3316935296","chavandokaren09@gmail.com","karen1234");
 INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("María Fernanda Rosales Ortega", "FerRos","5544517592","fernanda.rosales.ortega@gmail.com","F312066064");
 INSERT INTO usuarios (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contraseña`)VALUES("Alejandro Morales","alex19","7295183114","moralesa043@gmail.com","1234");
-
 INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",150,1, "https://i.ibb.co/qpPQSvB/denji-pld-mar.png");
 INSERT INTO `products` (`nombre`,`precio`,`categoria`,`enlaceimagen`) VALUES ("Denji",150,1, "https://i.ibb.co/CsCttwR/denji-pld-neg.png");
 
