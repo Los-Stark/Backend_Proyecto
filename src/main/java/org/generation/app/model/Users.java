@@ -26,7 +26,7 @@ public class Users {
 	private String phone;
 	@Column(name = "email",nullable = false, updatable=false, unique = true, length= FIELD_MAX_LENGTH)
 	private String email;
-	@Column(name = "contraseña",length=FIELD_MAX_LENGTH)
+	@Column(name = "contrasenia",length=FIELD_MAX_LENGTH)
 	private String password;
 	
 	
