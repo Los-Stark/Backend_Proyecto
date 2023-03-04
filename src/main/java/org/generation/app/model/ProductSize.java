@@ -1,5 +1,9 @@
 package org.generation.app.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 
 import jakarta.persistence.Entity;
@@ -23,17 +27,8 @@ public class ProductSize {
 	private long idTalla;
 	@Column(name = "Talla", nullable = false,length=FIELD_MAX_LENGTH)
 	private String talla;
-	/*@ManyToOne
-	@JoinColumn(name="fk_id_products")
-	private Products fkIdProducts;*/
-	
-	
-	/*public Products getFkIdProducts() {
-		return fkIdProducts;
-	}
-	public void setFkIdProducts(Products fkIdProducts) {
-		this.fkIdProducts = fkIdProducts;
-	}*/
+	@ManyToMany(cascade = CascadeType.REFRESH)
+	private Set<Products> assignProducts = new HashSet<>();
 	
 	
 	public long getIdTalla() {

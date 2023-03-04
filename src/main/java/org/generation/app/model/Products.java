@@ -1,10 +1,17 @@
 package org.generation.app.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -24,9 +31,23 @@ public class Products {
 	@Column(name = "enlaceimagen")
 	private String imageURL;
 	
+	@ManyToMany(cascade = CascadeType.REFRESH)
+	@JoinTable(name = "producto_talla", joinColumns = @JoinColumn(name = "idProduct"), 
+	inverseJoinColumns = @JoinColumn(name = "idProductSize") )
+    private Set<ProductSize> assignProductSizes = new HashSet<>();
+	
+	
+	//setter and getter de ManytoMany
 	
 	public long getIdProducts() {
 		return idProducts;
+	}
+	public Set<ProductSize> getAssignProductSizes() {
+		return assignProductSizes;
+	}
+	
+	public void setAssignProductSizes(Set<ProductSize> assignProductSizes) {
+		this.assignProductSizes = assignProductSizes;
 	}
 	public void setIdProducts(long idProducts) {
 		this.idProducts = idProducts;

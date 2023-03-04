@@ -16,5 +16,8 @@ public interface IProductsService {
 	
 	//public Products deleteProduct(ToDo)
 	
+	public Products assignProductsSize(long idProduct, long idProductSize);
+	
+	
 	
 }

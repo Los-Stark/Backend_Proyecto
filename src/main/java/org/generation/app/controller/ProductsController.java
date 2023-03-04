@@ -24,6 +24,7 @@ public class ProductsController {
 	@Autowired
 	IProductsService productsService;
 	
+	
 	@GetMapping("{id}")
 	public Products getProductsById(@PathVariable("id") long idProduct) {
 		return productsService.getProductById(idProduct);
@@ -51,6 +52,14 @@ public class ProductsController {
                     productsService.updateProduct(products), 
                     HttpStatus.CREATED);
 
+    }
+	
+	@PutMapping("/{idProduct}/size/{idProductSize}")
+    public Products assignProducts(
+            @PathVariable Long idProduct,
+            @PathVariable Long idProductSize
+    ){
+        return productsService.assignProductsSize(idProduct, idProductSize);
     }
 
 	
