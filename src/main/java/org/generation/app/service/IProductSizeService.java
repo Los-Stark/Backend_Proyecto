@@ -4,15 +4,17 @@ import java.util.List;
 
 import org.generation.app.model.ProductSize;
 
-public interface ISizeService {
+public interface IProductSizeService {
 
-	public ProductSize getSizeById(long idTalla);
+	public ProductSize getProductSizeById(long idTalla);
 	
 	public ProductSize setProductSize(ProductSize productSize);
 	
 	public ProductSize updateProductSize(ProductSize productSize);
 	
-	public List<ProductSize> getAllSizesByFkIdProduct(long idProduct);
+	public List<ProductSize> getAllProductSize();
+	
+	//public List<ProductSize> getAllSizesByFkIdProduct(long idProduct);
 	
 	
 }

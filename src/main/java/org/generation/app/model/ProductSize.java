@@ -13,7 +13,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Talla")
+@Table(name = "tallas")
 public class ProductSize {
 
 	public static final int FIELD_MAX_LENGTH= 20;

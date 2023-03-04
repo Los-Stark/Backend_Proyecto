@@ -1,3 +1,6 @@
+INSERT INTO `tallas` (`talla`) VALUES ( "CH");
+INSERT INTO `tallas` (`talla`) VALUES ( "M");
+INSERT INTO `tallas` (`talla`) VALUES ( "G");
 INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contrasenia`)VALUES ("Raygoza Zamudio Rafael","Rafa","3330349623", "raygoza.zamudio.rafael@gmail.com","contrasenia segura");
 INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contrasenia`)VALUES("Juan Marcos Gonzalez Romo","JuanMGonRo","3316935436","gonzalezromojm@gmail.com","juanito1997");
 INSERT INTO `usuarios` (`nombre_completo`,`nombres_de_usuarios`,`telefono`,`email`,`contrasenia`)VALUES("Karen Chavando Perez","KarenCP","3316935296","chavandokaren09@gmail.com","karen1234");
