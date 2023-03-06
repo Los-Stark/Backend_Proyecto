@@ -32,8 +32,8 @@ public class Products {
 	private String imageURL;
 	
 	@ManyToMany(cascade = CascadeType.REFRESH)
-	@JoinTable(name = "producto_talla", joinColumns = @JoinColumn(name = "idProduct"), 
-	inverseJoinColumns = @JoinColumn(name = "idProductSize") )
+	@JoinTable(name = "producto_talla", joinColumns = @JoinColumn(name = "id_product"), 
+	inverseJoinColumns = @JoinColumn(name = "id_product_size") )
     private Set<ProductSize> assignProductSizes = new HashSet<>();
 	
 	
