@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api/size")
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProductSizeController {
 
 	@Autowired

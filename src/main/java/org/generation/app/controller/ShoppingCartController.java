@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api/shoppingcart")
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ShoppingCartController {
 
 	@Autowired
