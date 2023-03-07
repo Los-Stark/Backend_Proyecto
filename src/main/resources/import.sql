@@ -126,3 +126,5 @@ INSERT INTO `producto_talla` (`id_product`, `id_product_size`) VALUES (16, 1);
  INSERT INTO `producto_talla` (`id_product`, `id_product_size`) VALUES (30, 1);
  INSERT INTO `producto_talla` (`id_product`, `id_product_size`) VALUES (30, 2);
  INSERT INTO `producto_talla` (`id_product`, `id_product_size`) VALUES (30, 3);
+ INSERT INTO `carrito` (`enlaceimagen`,`nombre`,`precio`,`talla`,`fk_id_User`) VALUES ("https://i.ibb.co/TB5DHmv/eren-sud-gris.png","Eren Yaher",300,"M",1);
+ INSERT INTO `carrito` (`enlaceimagen`,`nombre`,`precio`,`talla`,`fk_id_User`) VALUES ("https://i.ibb.co/TB5DHmv/eren-sud-gris.png","Eren Yaher",300,"G",1);

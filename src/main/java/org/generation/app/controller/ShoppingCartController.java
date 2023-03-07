@@ -67,5 +67,13 @@ public class ShoppingCartController {
                     HttpStatus.OK);
 
     }
+	
+	
+	@GetMapping("/users/{id}") //localhost:8080/api/addresses/customer/2
+	public List<ShoppingCart> getAllProductsByFkIdUsers(@PathVariable("id") long idUser){
+		return shoppingCartService.getAllShoppingCartByFkIdUsers(idUser);
+	}
+
+	
 
 }

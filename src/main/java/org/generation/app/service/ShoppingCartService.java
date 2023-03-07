@@ -3,6 +3,7 @@ package org.generation.app.service;
 import java.util.List;
 
 import org.generation.app.model.ShoppingCart;
+import org.generation.app.model.Users;
 import org.generation.app.repository.IShoppingCartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,5 +51,13 @@ public class ShoppingCartService implements IShoppingCartService {
 		shoppingCartRepository.delete(shoppingCart);
 		return "El producto con:  " + idProduct + " fue eliminado";	
 	}
+
+	@Override
+	public List<ShoppingCart> getAllShoppingCartByFkIdUsers(long idUser) {
+		return shoppingCartRepository.findAllByFkIdUserIdUser(idUser);
+
+	}
+
+
 	
 }

@@ -3,6 +3,8 @@ package org.generation.app.model;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,6 +14,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -30,8 +34,17 @@ public class ShoppingCart {
 	private String imageURL;
 	@Column(name = "talla")
 	private String talla;
+	@ManyToOne
+	@JoinColumn(name="fk_id_User")
+    private Users fkIdUser;
 	
-	
+
+	public Users getFkIdUser() {
+		return fkIdUser;
+	}
+	public void setFkIdUser(Users fkIdUser) {
+		this.fkIdUser = fkIdUser;
+	}
 	public long getIdProducts() {
 		return idProducts;
 	}
@@ -63,6 +76,7 @@ public class ShoppingCart {
 		this.talla = talla;
 	}
 	
+
 	/*@ManyToMany(cascade = CascadeType.REFRESH)
 	@JoinTable(name = "producto_talla", joinColumns = @JoinColumn(name = "id_product"), 
 	inverseJoinColumns = @JoinColumn(name = "id_product_size") )
